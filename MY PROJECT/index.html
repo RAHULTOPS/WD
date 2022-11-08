@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<style type="text/css">.tabcontent {
+  display: none;
+}
+.nav-bar{
+    width:100%;
+    height: 100px;
+    margin-top: 73px;
+}
+.nav-bar ul{
+    width: 100%;
+    margin-left: 150px;
+}
+.nav-bar ul li{
+    display: inline-block;
+    list-style: none;
+}
+.nav-bar ul li button{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #ccc;
+    border-radius: 5px 5px 0 0 ;
+    -webkit-border-radius: 5px 5px 0 0 ;
+    -moz-border-radius: 5px 5px 0 0 ;
+    -ms-border-radius: 5px 5px 0 0 ;
+    -o-border-radius: 5px 5px 0 0 ;
+    margin-top: -50px;
+    border: 1px;
+}
+.nav-bar ul li button:active{
+    background: linear-gradient(180deg, orange, yellow);
+}
+.nav-bar ul li button:hover{
+    background: linear-gradient(180deg, orange, yellow);
+}
+
+
+
+</style>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="nav-wrapper">
+        <ul>
+            <li><a href="index.html">Home  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="about.html">About us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| </a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="contact.html">Contact us </a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Header Section -->
+    <header class="header-wrapper">
+        <div class="row">
+            <div class="col">
+                <img src="images/logo.png" class="logo" alt="" width="50%" height="80px" >
+                
+            </div>
+            <div class="col">
+                <div class="search">
+                    <span><i class="fas fa-search"></i></span>
+                    <input type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search... " name="" id="">
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li><button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Web Layout</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'Paris')">Logo</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'Tokyo')">Banner</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'mumbai')">Flayer</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="services-wrapper" id="Web">
+        <div id="London" class="tabcontent">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves.Although the company blurb needs to inform readers about what the company does, it needs to do this in a very focused way. Most companies offer many different types of products or services. The blurb is not the place to describe them all. Instead of listing the variety of things your company does, focus on the key items as an overview. </p>
+                    <br><br>
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>Iphone Web Layout</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime suscipit corporis autem quo sequi temporibus adipisci. Laboriosam incidunt quaerat, quos impedit aliquam, exercitationem, esse ullam porro alias aspernatur enim atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores et harum repellat! Ipsa ipsum, aperiam, qui possimus totam, numquam laboriosam nulla suscipit consequuntur fugiat veritatis! Nesciunt consequuntur magni deleniti?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, tenetur, illum, aspernatur laudantium natus quis aperiam numquam inventore et molestiae expedita quibusdam voluptate cupiditate quidem iure. Tenetur ea voluptate suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, vel quibusdam officia ipsam voluptas corrupti eveniet eaque repellendus doloribus ipsa perspiciatis incidunt pariatur quo architecto commodi reiciendis! Ducimus, dolorum iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore earum voluptate accusantium, cupiditate at optio delectus error nostrum, asperiores ullam distinctio laborum nam quo laudantium consequatur voluptatem eius voluptatibus?4</p>
+                <br><br>
+                <div class="read"> 
+                <a href="">Read More...</a>
+                <br><br><br>
+            </div>
+            </div>
+        </div>
+    </div>
+     <div id="Paris" class="tabcontent" style="display: block;">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves.Although the company blurb needs to inform readers about what the company does, it needs to do this in a very focused way. Most companies offer many different types of products or services. The blurb is not the place to describe them all. Instead of listing the variety of things your company does, focus on the key items as an overview. </p>
+                    <br><br>
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>Iphone Logo</h1>
+                <p>The first logo was created by Ronald Wayne, one of which co-founded Apple in the early days in 1976, who wanted to represent the law of gravity that is inspired by an apple. The first image to represent the computer company was Isaac Newton, the man who revolutionised science with his discoveries on gravity.</p>
+                <br><br>
+                <div class="read"> 
+                <a href="">Read More...</a>
+                <br><br><br>
+            </div>
+            </div>
+        </div>
+    </div>
+     <div id="Tokyo" class="tabcontent">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves.Although the company blurb needs to inform readers about what the company does, it needs to do this in a very focused way. Most companies offer many different types of products or services. The blurb is not the place to describe them all. Instead of listing the variety of things your company does, focus on the key items as an overview. </p>
+                    <br><br>
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>Iphone Banner</h1>
+                <p>Banner alerts are the notifications that appear at the top of your screen while you're using another app on your iPhone or iPad. You see them most often with instant messaging apps, but they can be used for any kind of notification.</p>
+                <br><br>
+                <div class="read"> 
+                <a href="">Read More...</a>
+                <br><br><br>
+            </div>
+            </div>
+        </div>
+    </div>
+     <div id="mumbai" class="tabcontent">
+        <div class="row">
+            <div class="col">
+                <div class="services">
+                    <div class="row">
+                        <span><input type="checkbox"></span>
+                        <p>More services</p>
+                    </div>
+                    <div class="para">
+                    <p>A company paragraph is a short description of the company found on a wide variety of promotional materials, including pamphlets, digital media and sponsorship recognition. Writing a short but engaging paragraph, otherwise known as a "blurb," helps the public understand key points about a company, as to what it does and who it serves.Although the company blurb needs to inform readers about what the company does, it needs to do this in a very focused way. Most companies offer many different types of products or services. The blurb is not the place to describe them all. Instead of listing the variety of things your company does, focus on the key items as an overview. </p>
+                    <br><br>
+                </div>
+                </div>
+            </div>
+            <div class="col-1">
+                <h1>Key Features Of Flyer</h1>
+                <p>1.Creative flyer templates.<br>
+2.Search for your flyer design.<br>
+3.Just select a flyer template and customize.<br>
+4.Backgrounds & stickers OR add your own.<br>
+5.Fonts OR add your own option.<br>
+6.Crop images in various shapes.<br>
+7.Text Arts.<br>
+8.Multiple Layers.</p>
+                <br><br>
+                <div class="read"> 
+                <a href="">Read More...</a>
+                <br><br><br>
+            </div>
+            </div>
+        </div>
+    </div>
+        <br><br><br>
+    </section>
+    <section class="welcome-wrapper">
+        <div class="row-1 row">
+            <div class="col-2">
+                <br><br>
+                <h1>Welcome To Our Site...</h1>
+                <hr>
+                <br><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ipsam reprehenderit, facilis nostrum natus commodi. Voluptate exercitationem unde beatae culpa iste quas deserunt excepturi quisquam cum, quam dolorum modi odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo fugiat illum dolorem consequatur sint dolores, ducimus a quaerat inventore obcaecati, nemo error rerum voluptates neque officia provident. Tempore, nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio et sed, ipsam deserunt sunt quibusdam, amet provident recusandae suscipit dolorem quaerat blanditiis, aut iure ratione consequuntur esse omnis dignissimos obcaecati. lo</p>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, inventore debitis labore quia dolores nemo itaque perspiciatis, nihil nobis nam praesentium tenetur cumque. Fugit hic ratione dignissimos? Non, debitis animi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ad quam ea quas possimus. Porro, fugiat libero corrupti inventore illo at veniam animi eveniet voluptas esse laboriosam culpa numquam dolorem.</p>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quo error expedita sint quia modi ipsum laborum ad eum, illum nihil eius, doloribus dicta impedit laboriosam eaque unde. Dolor, quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro nemo explicabo autem minima quam, quod aliquid eligendi perferendis ipsam labore vitae, harum accusamus in error cum excepturi aliquam minus ullam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos ratione vitae recusandae veniam animi. Animi aperiam modi, corrupti illum dolorem quod quae culpa dicta? Repellendus esse minus doloribus laborum harum!</p>
+                <br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum commodi quas magnam? Veritatis numquam repudiandae cumque ipsa quisquam. Aliquid, fuga sed dolor quas ratione in animi nostrum accusamus ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate optio autem, hic tenetur excepturi quia enim, laudantium rerum veniam ea accusamus reiciendis unde odio atque eaque corporis esse a doloremque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti fugit, ab itaque, placeat odio error odit eos maiores amet distinctio dolor asperiores, eius nemo molestiae obcaecati omnis ratione quaerat veniam?
+                </p>
+            </div>
+            <div class="col-3">
+                <br><br>
+                <h1>Latest Projects</h1>
+                <div class="projects">
+                    <br>
+                    <div class="row">
+                        <span><input type="checkbox"></span> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <p>Modern Web 2.0 Styled Web Templete</p>
+                    </div>
+                    <img src="images/web-1.webp" alt="" width="80%" height="300px">
+<br><br>
+                    <div class="row">
+                        <span><input type="checkbox"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p>Banner Design</p>
+                    </div>
+                    <img src="images/banner.jpg" alt="" width="80%" height="150px">
+                    <br><br> 
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer-wrapper">
+        <div class="nav">
+        <ul>
+            <li>Pages :</li> &nbsp;&nbsp;&nbsp;
+            <li><a href="index.html">Home</a></li>&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp;
+            <li><a href="about.html">About us</a></li>&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;
+            <li><a href="contact.html">Contuct us</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="nav navwhite">
+        <ul>
+            <li>Our Activities :</li> &nbsp;&nbsp;&nbsp;
+            <li><a href="">Web Templete</a></li>&nbsp;&nbsp;&nbsp; _&nbsp;&nbsp;&nbsp;
+            <li><a href=""> Web Graphics</a></li>&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;
+             <li><a href=""> Logo</a></li>&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;
+            <li><a href=""> Banner</a></li>&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;
+            <li><a href=""> Flayer</a></li>&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;
+            <li><a href=""> Broucher etc. designing.</a></li>
+        </ul>
+    </div>
+    <hr>
+    <br>
+    <div class="nav">
+        <h3>
+        Copyright 2010 by Ariful tonu, All Right Reserved.
+        <br>
+        Design a Modern web 2.0 styled web layout.
+    </h3>
+    </div>
+    <br>
+    </footer>
+</body>
+</html>
